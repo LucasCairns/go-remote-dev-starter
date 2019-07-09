@@ -1,0 +1,12 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+  "name": "Go",
+  "dockerComposeFile": "./docker-compose.yml",
+  "extensions": ["ms-vscode.go"],
+  "settings": {
+    "go.gopath": "/go"
+  },
+  "service": "web_server",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose"
+}
